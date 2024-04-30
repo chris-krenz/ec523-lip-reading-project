@@ -29,7 +29,7 @@ def preprocess_frame(frame):
 # create background subtractor
 bg_subtractor = cv2.createBackgroundSubtractorMOG2(history=100, varThreshold=50, detectShadows=False)
 
-# Threshold for mouth movement detection
+# threshold for mouth movement detection
 movement_threshold = 90
 
 video_capture = cv2.VideoCapture(0)
@@ -602,8 +602,6 @@ while True:
 
             # preprocess the frame
             tensor_frame = preprocess_frame(mouth_roi)
-
-
 
             # check how many frames feeding into model ()
 
