@@ -7,10 +7,12 @@ device = torch.device('cpu')
 
 # loading model 
 model = ResTCN(num_classes=500).to(device)
-pretrained_model_path = '/Users/ussie/Desktop/EC523/FinalProject/ec523-lip-reading-project/cnn2_1714164171.pth'
+
+pretrained_model_path = '/Users/ussie/Desktop/EC523/FinalProject/ec523-lip-reading-project/LRW_CNN.pth'
 pretrained_model_state = torch.load(pretrained_model_path, map_location=device)
 model.load_state_dict(pretrained_model_state['model_state_dict'])
 model.eval()
+
 
 # function to preprocess video frames
 def preprocess_frame(frame):
@@ -28,7 +30,7 @@ def preprocess_frame(frame):
 bg_subtractor = cv2.createBackgroundSubtractorMOG2(history=100, varThreshold=50, detectShadows=False)
 
 # Threshold for mouth movement detection
-movement_threshold = 50
+movement_threshold = 90
 
 video_capture = cv2.VideoCapture(0)
 
@@ -601,10 +603,15 @@ while True:
             # preprocess the frame
             tensor_frame = preprocess_frame(mouth_roi)
 
+
+
+            # check how many frames feeding into model ()
+
             # calculate mean intensity of the mouth region
             mean_intensity = np.mean(mouth_roi)
 
-            # doing this so that model predicts only when mouth moves 
+            # doing this so that model predicts only when mouth moves
+
             # make prediction if the mean intensity exceeds the threshold
             if mean_intensity > movement_threshold:
                 with torch.no_grad():
@@ -619,7 +626,7 @@ while True:
 
                     # display the prediction
                     cv2.putText(frame, "Predicted word: {}".format(predicted_word), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
-
+                    cv2.waitKey(2300)
     # display frame
     cv2.imshow('Video', frame)
 
