@@ -50,3 +50,10 @@ How to use:
 - Wait for prediction 
 
 <img width="264" alt="Screenshot 2024-05-03 at 11 17 44 PM 1" src="https://github.com/chris-krenz/ec523-lip-reading-project/assets/74789609/bd4d7c17-f51e-443a-beb1-6d070a8b85d2">
+
+# LRW Instructions
+
+- Download dataset from https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html
+- Place data in folder called lipread_mp4
+- Run LRW_CNN.ipynb or LRW_transformer.ipynb
+
