@@ -10,15 +10,15 @@ Usman Jalil, Chris Krenz, Cole Resurreccion, Thomas Simmons
 For this project, we are utilizing 2 datasets (LRW and Grid) to create lip-reading models (both CNNs and a Transformer).  Please see our submitted report for additional details on the project.  This project also contains an App that performers the lip-reading (word-by-word) in real-time.
 
 Brief description of each file: 
- - EC523_Group_Project_LipNET_V2.ipynb: The CNN implemented on the Grid dataset (same used for LipNET)
- - Grid-Transformer+CNN.ipynb: Combination CNN and Transformer implemented on the Grid dataset (only partially functioning; not central to our analysis)
- - Grid-Transformer.ipynb: Transformer implemented on the Grid dataset
- - LRW_ResNet_TCN.ipynb: ResNet-TCN Hybrid implemented on the Lip Reading in the Wild (LRW) dataset
- - LRW_res_tcn.pth: PyTorch state dictionary for ResNet-TCN Hybrid LRW model
- - LRW_transformer.ipynb: Transformer implemented on the LRW dataset (only partially functioning; not central to our analysis)
- - LRW_transformer.pth: Pytorch state dictionary for LRW transformer model
- - EC523_Group_Project_LipNET.ipynb: Old/original version of this notebook
- - req.txt: Package requirements for the LRW dataset
+ - **EC523_Group_Project_LipNET_V2.ipynb**: The CNN implemented on the Grid dataset (same used for LipNET)
+ - **Grid-Transformer+CNN.ipynb**: Combination CNN and Transformer implemented on the Grid dataset (only partially functioning; not central to our analysis)
+ - **Grid-Transformer.ipynb**: Transformer implemented on the Grid dataset
+ - **LRW_ResNet_TCN.ipynb**: ResNet-TCN Hybrid implemented on the Lip Reading in the Wild (LRW) dataset
+ - **LRW_res_tcn.pth**: PyTorch state dictionary for ResNet-TCN Hybrid LRW model
+ - **LRW_transformer.ipynb**: Transformer implemented on the LRW dataset (only partially functioning; not central to our analysis)
+ - **LRW_transformer.pth**: Pytorch state dictionary for LRW transformer model
+ - **EC523_Group_Project_LipNET.ipynb**: Old/original version of this notebook
+ - **req.txt**: Package requirements for the LRW dataset
 
 
 # App Instructions
