@@ -36,6 +36,7 @@ How to use:
 
 - Download dataset from https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html
 - Place data in folder called lipread_mp4
+- Run pip install -r req.txt to download the required packages
 - Run LRW_CNN.ipynb or LRW_transformer.ipynb
 
 # Grid Instructions
