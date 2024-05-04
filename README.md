@@ -36,3 +36,17 @@ The datasetse are discussed in the following sources:
   - J. S. Chung and A. Zisserman, “Lip Reading in the Wild,” in Computer Vision –  ACCV 2016, S.-H. Lai, V. Lepetit, K. Nishino, and Y. Sato, Eds., in Lecture Notes in Computer Science. Cham: Springer International Publishing, 2017, pp. 87–103. doi: 10.1007/978-3-319-54184-6_6.
   - J. S. Chung, A. Senior, O. Vinyals, and A. Zisserman, “Lip Reading Sentences in the Wild,” in 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Jul. 2017, pp. 3444–3453. doi: 10.1109/CVPR.2017.367.
   - Y. M. Assael, B. Shillingford, S. Whiteson, and N. de Freitas, “LipNet: End-to-End Sentence-level Lipreading.” arXiv, Dec. 16, 2016. doi: 10.48550/arXiv.1611.01599.
+
+
+# File Instructions
+
+To run the App:
+- cd App
+- python3 app.py
+
+How to use: 
+- Face camera
+- Start saying words
+- Wait for prediction 
+
+<img width="264" alt="Screenshot 2024-05-03 at 11 17 44 PM 1" src="https://github.com/chris-krenz/ec523-lip-reading-project/assets/74789609/bd4d7c17-f51e-443a-beb1-6d070a8b85d2">

@@ -160,3 +160,6 @@ cython_debug/
 #.idea/
 
 forgraph.py
+# pretrained models
+cnn2_1714164171.pth
+LRW_CNN.pth
