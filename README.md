@@ -43,9 +43,9 @@ How to use:
 - Run LRW_CNN.ipynb or LRW_transformer.ipynb
 
 
-# Grid Instructions (notebooks most likely to work with Google Colab)
+# Grid Instructions
 
+Intended to be run with Google Colab...
 - Download the s1.zip and alignments.zip datasets from https://zenodo.org/records/3625687
 - Extract the 'alignments' and 's1' folders to a zip called 'data.zip' and save it to the root of your Google Drive
 - Run the notebook
-- (Alternatively, download locally, create the data.zip, open notebook in preferred environment, update the reference in the 2nd cell to read in the data, run the notebook)
