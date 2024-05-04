@@ -43,3 +43,10 @@ The datasetse are discussed in the following sources:
 To run the App:
 - cd App
 - python3 app.py
+
+How to use: 
+- Face camera
+- Start saying words
+- Wait for prediction 
+
+<img width="264" alt="Screenshot 2024-05-03 at 11 17 44 PM 1" src="https://github.com/chris-krenz/ec523-lip-reading-project/assets/74789609/bd4d7c17-f51e-443a-beb1-6d070a8b85d2">
