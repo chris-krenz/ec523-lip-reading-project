@@ -1,3 +1,8 @@
+first.pth filter=lfs diff=lfs merge=lfs -text
+transformer_1714365547.pth filter=lfs diff=lfs merge=lfs -text
+LRW_CNN.pth filter=lfs diff=lfs merge=lfs -text
+full_res_tcn.pth filter=lfs diff=lfs merge=lfs -text
+full_transformer.pth filter=lfs diff=lfs merge=lfs -text
 lrw_snv1x_dsmstcn3x.pth filter=lfs diff=lfs merge=lfs -text
 lrw_resnet18_dctcn_video.pth filter=lfs diff=lfs merge=lfs -text
 res_tcn.pth filter=lfs diff=lfs merge=lfs -text
