@@ -18,6 +18,7 @@ Brief description of each file:
  - **LRW_transformer.ipynb**: Transformer implemented on the LRW dataset (only partially functioning; not central to our analysis)
  - **LRW_transformer.pth**: Pytorch state dictionary for LRW transformer model
  - **EC523_Group_Project_LipNET.ipynb**: Old/original version of this notebook
+ - **grid-requirements.txt**: Used to pip install package dependencies for Grid notebooks (if running locally)
  - **req.txt**: Package requirements for the LRW dataset
 
 
@@ -49,3 +50,4 @@ Intended to be run with Google Colab...
 - Download the s1.zip and alignments.zip datasets from https://zenodo.org/records/3625687
 - Extract the 'alignments' and 's1' folders to a zip called 'data.zip' and save it to the root of your Google Drive
 - Run the notebook
+- (If running locally, can use `pip install -r grid-requirements.txt' to install dependencies)
