@@ -4,39 +4,20 @@ Group Project for EC523 Deep Leaning course
 Usman Jalil, Chris Krenz, Cole Resurreccion, Thomas Simmons
 {ujalil,ckrenz,coler,tsimmons}@bu.edu
 
-This TensorFlow project implements a 3D CNN to perform lip-reading given a video input.
-
 
 ## Overview
 
-For this project, we are utilizing 2 datasets (LRW and LipNET) discussed further in our submitted report.
+For this project, we are utilizing 2 datasets (LRW and Grid) to create lip-reading models (both CNNs and a Transformer).  Please see our submitted report for additional details on the project.  This project also contains an App that performers the lip-reading (word-by-word) in real-time.
 
-(Completed) We start by pre-processing the data: using a Haar classifier (unnecessary for LRW) to locate the speaker's lips, crop the image, turn it to grayscale, standardize its size, and normalize it.  For LipNET, this results in clips that are 75 frames long x 80 pixels wide x 40 pixels tall, and for LRW, it results in 29 frames of roughly 80 x 130.
-
-(Partially Completed) After pre-processing, we then create a CNN with the following architecture:
-model = models.Sequential(
-    layers.Conv3D(32,   (3, 3, 3), activation='relu', padding='same', input_shape=(num_frames, height, width, channels)),
-    layers.MaxPooling3D((2, 2, 2)),
-    layers.Conv3D(64,   (3, 3, 3), activation='relu', padding='same'),
-    layers.MaxPooling3D((2, 2, 2)),
-    layers.Conv3D(128,  (3, 3, 3), activation='relu', padding='same'),
-    layers.MaxPooling3D((1, 2, 2)), 
-    layers.Flatten(),
-    layers.Dense(128, activation='relu'),
-    layers.Dense(num_classes, activation='softmax')
-)
-
-(Forthcoming) Finally, we train the model, test it, and visualize the results.
-
-Additional information can be found in our submitted pdf.
-
-## Data
-
-The datasetse are discussed in the following sources:
-  - J. S. Chung and A. Zisserman, “Lip Reading in the Wild,” in Computer Vision –  ACCV 2016, S.-H. Lai, V. Lepetit, K. Nishino, and Y. Sato, Eds., in Lecture Notes in Computer Science. Cham: Springer International Publishing, 2017, pp. 87–103. doi: 10.1007/978-3-319-54184-6_6.
-  - J. S. Chung, A. Senior, O. Vinyals, and A. Zisserman, “Lip Reading Sentences in the Wild,” in 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Jul. 2017, pp. 3444–3453. doi: 10.1109/CVPR.2017.367.
-  - Y. M. Assael, B. Shillingford, S. Whiteson, and N. de Freitas, “LipNet: End-to-End Sentence-level Lipreading.” arXiv, Dec. 16, 2016. doi: 10.48550/arXiv.1611.01599.
-
+Brief description of each file: 
+ - EC523_Group_Project_LipNET_V2.ipynb: The CNN implemented on the Grid dataset (same used for LipNET)
+ - Grid-Transformer.ipynb: Transformer implemented on the Grid dataset
+ - LRW_ResNet_TCN.ipynb: ResNet-TCN Hybrid implemented on the Lip Reading in the Wild (LRW) dataset
+ - LRW_res_tcn.pth: PyTorch state dictionary for ResNet-TCN Hybrid LRW model
+ - LRW_transformer.ipynb: Transformer implemented on the LRW dataset (only partially functioning; not central to our analysis)
+ - LRW_transformer.pth: Pytorch state dictionary for LRW transformer model
+ - EC523_Group_Project_LipNET.ipynb: Old/original version of this notebook
+ - req.txt: Package requirements
 
 # File Instructions
 
@@ -57,3 +38,8 @@ How to use:
 - Place data in folder called lipread_mp4
 - Run LRW_CNN.ipynb or LRW_transformer.ipynb
 
+# Grid Instructions
+
+- Download the s1 dataset from https://zenodo.org/records/3625687
+- In the first cell of the Grid (or LipNet) notebooks, point the reference to your download location
+- Run the notebook
