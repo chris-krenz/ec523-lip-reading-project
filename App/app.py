@@ -8,7 +8,7 @@ device = torch.device('cpu')
 # loading model 
 model = ResTCN(num_classes=500).to(device)
 
-pretrained_model_path = '/Users/ussie/Desktop/EC523/FinalProject/ec523-lip-reading-project/LRW_CNN.pth'
+pretrained_model_path = '/Users/ussie/Desktop/EC523/FinalProject/ec523-lip-reading-project/App/LRW_CNN.pth'
 pretrained_model_state = torch.load(pretrained_model_path, map_location=device)
 model.load_state_dict(pretrained_model_state['model_state_dict'])
 model.eval()
